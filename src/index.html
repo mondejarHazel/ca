@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-Tailwind</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="script .js"></script>
+    <style>
+      body {
+          background-image: url('https://media.istockphoto.com/id/172914321/photo/metal-wall-pastel-abstract-reflections.jpg?s=612x612&w=0&k=20&c=GZipk9A11EQnbCgu-nqaUky0l_U5reQPnfRSk-gMwNk=');
+          background-size:cover;
+          font-family: 'Montserrat', sans-serif;
+      }
+  </style>
+</head>
+<body>
+  <body class="bg-blue-100 flex flex-col justify-center items-center h-screen">
+    <div class="w-100 md:w-100 bg-gray-300 p-8 rounded-lg shadow-lg flex flex-col items-end">
+      <div class="mb-4">
+        <input type="text" id="input-field" class="text-right text-gray-800 text-lg font-bold w-full" value="0">
+          </div>
+          <div class="grid grid-cols-4 gap-4">
+            <button id="clear" class="bg-orange-500 hover:bg-orange-600 text-white file:800 font-bold py-2 px-4 rounded-lg"onclick="clearResult()">AC</button>
+            <button id="Delete" class="bg-orange-500 hover:bg-orange-600 text-white 800 font-bold py-2 px-4 rounded-lg"onclick="Delete()">X</button>
+            <button id="percentage" class="bg-orange-500 hover:bg-orange-600 text-white 800 font-bold py-2 px-4 rounded-lg"onclick="percentage()">%</button>
+            <button id="operationD" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg"onclick="operationD()">÷</button>
+            <button id="addnumber7" class="bg-gray-400 hover:bg-gray-500 text-black 800 font-bold py-2 px-4 rounded-lg"onclick="addnumber7()">7</button>
+            <button id="addnumber8" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber8()">8</button>
+            <button id="addnumber9" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber9()">9</button>
+            <button id="operationM" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg"onclick="operationM()">×</button>
+            <button id="addnumber4" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber4()">4</button>
+            <button id="addnumber5" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber5()">5</button>
+            <button id="addnumber6" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber6()">6</button>
+            <button id="operationS" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg"onclick="operationS()">-</button>
+            <button id="addnumber1" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber1()">1</button>
+            <button id="addnumber2" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber2()">2</button>
+            <button id="addnumber3" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber3()">3</button>
+            <button id="operationA" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg"onclick="operationA()">+</button>
+            <button id="addnumber0" class="col-span-2 bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addnumber0()">0</button>
+            <button id="addDecimal" class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded-lg"onclick="addDecimal()">.</button>
+            <button id="calculateResult" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg"onclick="calculateResult()">=</button>
+            </div>
+</body>
+</html>
